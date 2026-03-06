@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcopt"
+version = "0.1.0"
+description = "A Qiskit-based quantum circuit optimizer with metrics and CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "qiskit>=1.0.0",
+]
+
+[project.scripts]
+qcopt = "qcopt.cli:main"
+
+[tool.setuptools]
+packages = ["qcopt"]
